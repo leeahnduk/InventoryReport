@@ -1,5 +1,5 @@
-# tetHash
-This application helps to quickly upload Blacklist or whitelist Process Binary Hash into Tetration cluster scope.
+# InventoryReport
+This application helps to quickly report inventory statistics (Top Talker, Silent hosts) per subnet in a Tetration scope.
 
 ## Table of contents
 * [Installation](#Installation)
@@ -13,7 +13,7 @@ This application helps to quickly upload Blacklist or whitelist Process Binary H
 
 From sources
 
-Download the sources from [Github](https://github.com/leeahnduk/TetHash.git), extract and execute the following commands
+Download the sources from [Github](https://github.com/leeahnduk/InventoryReport.git), extract and execute the following commands
 
 ```
 $ pip3 install -r requirements.txt
@@ -21,7 +21,8 @@ $ pip3 install -r requirements.txt
 ```
 
 ## Screenshots
-![Example screenshot](https://github.com/leeahnduk/TetHash/blob/master/TetHash.jpg)
+![Run screenshot](https://github.com/leeahnduk/InventoryReport/blob/master/Run.jpg)
+![Result screenshot](https://github.com/leeahnduk/InventoryReport/blob/master/Result.jpg)
 
 ## UserGuide
 How to use this application:
@@ -46,13 +47,11 @@ Need to have sample Blacklist/Whitelist Hash file to upload to Tetration. The sa
 
 Step 1: Issue `$ pip3 install -r requirements.txt` to install all required packages.
 
-Step 2: FileHash Upload: `python3 fileHashUpload.py --url https://tet-cluster-ip --credential api_credentials.json`
+Step 2: FileHash Upload: `python3 invStatistic.py --url https://tet-cluster-ip --credential api_credentials.json`
 
-Step 3: Answer all the questions to upload hashfile to the cluster.
+Step 3: Answer all the questions about scope, subnet, start time, end time to query the inventory statistics.
 
-Step 4: FileHash Upload: `python3 fileHashDownload.py --url https://tet-cluster-ip --credential api_credentials.json` to download Blacklist/Whitelist Binary Hash to FileHashDown.csv.
-
-Step 5: FileHash Delete: `python3 fileHashDelete.py --url https://tet-cluster-ip --credential api_credentials.json` to delete Blacklist/Whitelist Binary Hash out of Tetration scope.
+Step 4: Open stats_hosts.csv to see the statistic result and based on that csv to know which hosts are top talker, silent, under-utilised,...
 
 ## Feedback
 Any feedback can send to me: Le Anh Duc (leeahnduk@yahoo.com or anhdle@cisco.com)
