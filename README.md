@@ -21,7 +21,7 @@ $ pip3 install -r requirements.txt
 ```
 
 ## Screenshots
-![Run screenshot](https://github.com/leeahnduk/InventoryReport/blob/master/Run.jpg)
+![Run screenshot](https://github.com/leeahnduk/InventoryReport/blob/master/Run1.jpg)
 ![Result screenshot](https://github.com/leeahnduk/InventoryReport/blob/master/Result.jpg)
 
 ## UserGuide
@@ -40,7 +40,7 @@ A quick look for the help will list the current available options.
 To start the script, just use: `python3 onboardTetration.py --url https://tet-cluster-ip --credential api_credentials.json`
 
 ## Files
-Need to have sample Blacklist/Whitelist Hash file to upload to Tetration. The sample csv file is in the github folder.
+Output is stats_hosts.csv
 
 
 ## Steps
